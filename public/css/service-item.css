@@ -1,0 +1,272 @@
+/*头部*/
+.shop-header {
+  height: 150px;
+}
+
+.shop-header > .divider {
+  height: 10px;
+  width: 100%;
+  background-color: #F8F8F8;
+}
+
+/*左侧*/
+.head-left {
+  float: left;
+  margin: 60px 0 0 15px;
+}
+
+.head-left .time {
+  margin-left: 10px;
+  color: #929292;
+}
+
+.head-left .time em {
+  font-weight: normal;
+  color: #1d1515;
+}
+
+.head-left .appointment-time em {
+  color: #e84b47;
+}
+
+.head-left .name {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/*右侧*/
+.head-right {
+  float: right;
+  line-height: 22px;
+  margin-top: 68px;
+  font-size: 0;
+}
+
+.head-right .item {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.head-right .item .value {
+  color: #e84b47;
+}
+
+.head-right .divider {
+  color: #e5e5e5;
+  font-size: 14px;
+  position: relative;
+  top: -8px;
+}
+
+/*导航*/
+.shop-nav {
+  height: 40px;
+  width: 100%;
+  background-color: #323434;
+}
+
+/*内容*/
+.service-item-wrap {
+  padding: 22px 0 50px 0;
+  background-color: #F8F8F8;
+}
+
+/*左侧*/
+.content-left {
+  float: left;
+  width: 960px;
+}
+
+.services {
+  background-color: #fff;
+}
+
+.service-item-wrap .title {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #121212;
+  margin: 0 20px 0 30px;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: latobold, Verdana, sans-serif !important;
+}
+
+.service-item-wrap .title span {
+  border-bottom: 4px solid #e84b47;
+  padding-bottom: 17px;
+}
+
+.service-item {
+  padding: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.service-item:hover {
+  background-color: #F8F8F8;
+}
+
+.service-item a {
+  display: block;
+}
+
+.service-item img {
+  width: 150px;
+  height: 150px;
+  float: left;
+  border: 1px solid #dddddd;
+}
+
+.service-item-info {
+  overflow: hidden;
+  color: #929292;
+  padding-left: 30px;
+}
+
+.service-item-info .name {
+  color: #121212;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 42px;
+  height: 42px;
+}
+
+.service-item-info .desc {
+  line-height: 42px;
+  height: 42px;
+}
+
+.service-item-info .price-sale {
+  margin-top: 25px;
+}
+
+.service-item-info .price {
+  color: #e84b47;
+  font-size: 30px;
+}
+
+.service-item-info .price em {
+  font-size: 14px;
+}
+
+.service-item-info .old-price {
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.service-item-info .old-price em {
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.service-item-info .sale {
+  float: right;
+  margin: 16px 40px 0 0;
+}
+
+/*右侧*/
+.content-right {
+  float: right;
+  width: 230px;
+  height: 100px;
+}
+
+/*二维码*/
+.qr-code {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 290px;
+}
+
+.qr-code1 {
+  background: url("../img/fuwushang2_07.jpg") no-repeat;
+}
+
+.qr-code2 {
+  background: url("../img/tuijianfuwushang_06.jpg") no-repeat;
+}
+
+.qr-code img {
+  width: 130px;
+  height: 130px;
+  margin: 50px 0 0 50px;
+}
+
+.shop-nav li {
+  float: left;
+  line-height: 40px;
+  height: 40px;
+  width: 140px;
+  text-align: center;
+}
+
+.shop-nav li a {
+  display: block;
+}
+
+.shop-nav li.active {
+  background-color: #424242;
+}
+
+/*商家简介*/
+.company-description {
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.company-description .company {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 10px 25px;
+}
+
+.company-description .company-about {
+  line-height: 28px;
+  color: #929292;
+  padding: 0 25px 25px;
+  font-size: 16px;
+}
+
+/*用户评论*/
+.user-comments {
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.comment-item {
+  padding: 20px 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.comment-item .avatar {
+  float: left;
+}
+
+.comment-info {
+  overflow: hidden;
+  padding-left: 20px;
+  line-height: 26px;
+}
+
+.comment-info .star {
+  margin-right: 10px;
+}
+
+.comment-info .content {
+  font-size: 16px;
+}
+
+.comment-info .location {
+  margin-top: 10px;
+  color: #8e8e8e;
+}
+
+/*锚点*/
+#companyAnchor, #commentAnchor {
+  position: relative;
+  bottom: 90px;
+}

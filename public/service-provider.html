@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tan</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/service-provider.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="sticky-header">
+    <div class="header-wrap fixed-box clearfix">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="navbar-list">
+        <li class="position">
+          <a href="#">
+            <img src="./img/citypoint.png" alt="">
+            <span>北京</span>
+            <span>切换城市</span>
+          </a>
+        </li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">下载APP</a></li>
+        <li><a class="active" href="service-provider.html">服务商</a></li>
+        <li><a href="#">商家入驻</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">商家登录</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="service-provider">
+  <div class="fixed-box clearfix">
+    <h2 class="title">服务商</h2>
+    <div class="service-provider-list">
+      <ul class="clearfix" id="serviceList">
+        <script id="temp-serviceList" type="text/html">
+          {{each serviceProviders}}
+          <li>
+            <a href="service-item.html?serviceId={{$value.serviceId}}" class="service-item">
+              <div class="service-item-wrap">
+                <div class="img">
+                  <img src="{{$value.img}}" alt="">
+                </div>
+                <h2 class="name">{{$value.name}}</h2>
+                <div class="info">
+                  <span class="sale">{{$value.sale}}</span>
+                  <span class="good">{{$value.good}}</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          {{/each}}
+        </script>
+      </ul>
+      <div class="load-more">
+        <span class="more">
+          查看更多商家
+          <img src="img/fuwu_down2.jpg" class="icon"/>
+        </span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="#" class="shop-enter">
+        <img src="./img/tuijianfuwushang_03.jpg" alt="">
+      </a>
+      <div class="qr-code">
+        <img src="./img/daowayApp.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-box">
+  <div class="ensure">
+    <h2>到位<span class="service">服务</span>保障</h2>
+    <p>到位平台担保交易安全，交易未成功100%退款</p>
+  </div>
+
+  <ul class="service clearfix">
+    <li>
+      <img src="img/quan.png" alt="">
+      <p>服务多</p>
+    </li>
+    <li>
+      <img src="img/quan.png" alt="">
+      <p>上门快</p>
+    </li>
+    <li>
+      <img src="img/quan.png" alt="">
+      <p>有保障</p>
+    </li>
+  </ul>
+
+  <div class="hot-city clearfix">
+    <dl>
+      <dt>热门城市</dt>
+      <dd id="hotCity">
+        <script id="temp-hotCity" type="text/html">
+          {{each hotCitys}}
+          <span>{{$value}}</span>
+          {{/each}}
+        </script>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="fixed-box">
+    <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1</p>
+    <p>北京邻家科技有限公司</p>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/art-template.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/service-provider.js"></script>
+</body>
+</html>

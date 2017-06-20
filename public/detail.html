@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tan</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+
+<script id="temp" type="text/html">
+  <div class="header">
+    <div class="sticky-header">
+      <div class="header-wrap fixed-box clearfix">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="">
+          </a>
+        </div>
+        <ul class="navbar-list">
+          <li class="position">
+            <a href="#">
+              <img src="./img/citypoint.png" alt="">
+              <span>北京</span>
+              <span>切换城市</span>
+            </a>
+          </li>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="#">下载APP</a></li>
+          <li><a href="service-provider.html">服务商</a></li>
+          <li><a href="#">商家入驻</a></li>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">商家登录</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+    <div class="fixed-box clearfix">
+      <!--导航-->
+      <h2 class="content-nav">
+        <span>所有分类</span>
+        <span class="arrow">&gt;</span>
+        <span class="categoryId">{{detailData.categoryId}}</span>
+        <span class="arrow">&gt;</span>
+        <span class="cnav">{{detailData.cnav}}</span>
+      </h2>
+
+      <!--左侧-->
+      <div class="content-left">
+
+        <!--服务信息-->
+        <div class="service-info clearfix">
+          <img class="pic" src="{{detailData.pic}}" alt="">
+          <div class="service-desc">
+            <h2 class="name">
+              家庭保洁
+            </h2>
+            <p class="price">
+              价格<em class="now-price">{{detailData.price}}</em><span class="price-desc">{{detailData.priceDes}}</span>
+              <span class="old-price">原价<em>{{detailData.oldPrice}}</em></span>
+            </p>
+            <p class="sale">已售<em>{{detailData.sale}}</em></p>
+          </div>
+
+          <!--二维码-->
+          <div class="qr-code">
+            <img src="./img/erweima.png" alt="">
+            <p class="scan">扫一扫</p>
+            <p class="appointment">立即预约</p>
+          </div>
+        </div>
+
+        <!--服务描述-->
+        <div class="description">
+          <h2 class="title">服务描述</h2>
+          <p>{{@detailData.servicePriceDescription}}</p>
+
+          <h2 class="title">服务范围</h2>
+          <p>{{detailData.serviceScope}}</p>
+          <h2 class="title">服务时间</h2>
+          <p>
+            <span class="service-time">{{detailData.serviceTime}}</span>
+            最近可预约时间:<span class="appointment-time">{{detailData.serviceAppointmentTime}}</span>
+          </p>
+
+          <h2 class="title">订购须知</h2>
+          <p>{{@detailData.serviceNotice}}</p>
+
+          <h2 class="title">商家简介</h2>
+          <p>{{detailData.serviceDescription}}</p>
+
+        </div>
+      </div>
+
+      <!--右侧-->
+      <div class="content-right">
+        <!--服务商信息-->
+        <div class="service-provider">
+          <h2 class="title">服务商</h2>
+          <img class="avatar" src="{{detailData.serviceShopAvatar}}" alt="">
+          <h2 class="service-name">{{detailData.serviceName}}</h2>
+          <p class="sale-info">成功接单 <span>{{detailData.serviceOrder}}</span></p>
+          <p class="sale-info">接单率 <span>{{detailData.serviceOrderRate}}</span></p>
+          <p class="sale-info">好评率 <span>{{detailData.serviceGoodRate}}</span></p>
+        </div>
+
+        <div class="qr-code">
+          <img src="./img/daowayApp.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-box">
+    <div class="ensure">
+      <h2>到位<span class="service">服务</span>保障</h2>
+      <p>到位平台担保交易安全，交易未成功100%退款</p>
+    </div>
+
+    <ul class="service clearfix">
+      <li>
+        <img src="img/quan.png" alt="">
+        <p>服务多</p>
+      </li>
+      <li>
+        <img src="img/quan.png" alt="">
+        <p>上门快</p>
+      </li>
+      <li>
+        <img src="img/quan.png" alt="">
+        <p>有保障</p>
+      </li>
+    </ul>
+
+    <div class="hot-city clearfix">
+      <dl>
+        <dt>热门城市</dt>
+        <dd>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+          <span>北京</span>
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="fixed-box">
+      <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1</p>
+      <p>北京邻家科技有限公司</p>
+    </div>
+  </div>
+</script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/art-template.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+
+  // 查询字符串
+  var queryStr = window.location.search;
+
+  // 请求id和tag数据
+  var url = 'http://localhost:3000/daowei/detail' + queryStr;
+  $.get(
+    url,
+    function (data) {
+      if (data.status === 1) {
+        // 基于模板名渲染模板
+        var html = template('temp', {
+          detailData: data.detailData
+        });
+        $('body').append(html);
+      }
+    },
+    'json'
+  );
+
+</script>
+</body>
+</html>

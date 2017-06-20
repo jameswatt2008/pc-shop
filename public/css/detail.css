@@ -1,0 +1,191 @@
+/*内容区包裹*/
+.content-wrap {
+  background-color: #fbf8f8;
+  color: #1d1515;
+}
+
+/*导航*/
+.content-nav {
+  line-height: 85px;
+  height: 85px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: latobold, Verdana, sans-serif;
+}
+
+/*左侧*/
+.content-left {
+  float: left;
+  width: 960px;
+  margin-bottom: 40px;
+}
+
+/*右侧*/
+.content-right {
+  float: right;
+  width: 230px;
+}
+
+.content-nav .arrow {
+  margin: 0 5px;
+  font-weight: normal;
+}
+
+/*商品信息*/
+.service-info, .description {
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8;
+}
+
+.service-info .pic {
+  width: 160px;
+  height: 160px;
+  margin: 30px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  float: left;
+}
+
+.service-desc {
+  overflow: hidden;
+  margin-top: 25px;
+  line-height: 42px;
+  float: left;
+}
+
+.service-desc .name {
+  font-size: 18px;
+}
+
+.service-desc .price {
+  line-height: 42px;
+}
+
+.service-desc .now-price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #fc545e;
+}
+
+.service-desc .price-desc {
+  color: #fc545e;
+  font-weight: bold;
+}
+
+.service-desc .old-price {
+  margin-left: 40px;
+  color: #898989;
+}
+
+.service-desc .old-price em {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.service-desc .sale em {
+  color: #fc545e;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+/*二维码*/
+.service-info .qr-code {
+  float: right;
+  text-align: center;
+  margin: 20px 60px 0 0;
+}
+
+.service-info .qr-code .scan, .service-info .qr-code .appointment {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.service-info .qr-code .appointment {
+  color: #fc545e;
+}
+
+/*服务描述*/
+.description {
+  padding: 30px 20px;
+}
+
+.description .title {
+  border-bottom: 3px solid #fb474f;
+  padding: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.description p {
+  line-height: 24px;
+  margin: 15px 0 5px;
+  font-size: 14px;
+}
+
+.description .service-time {
+  margin-right: 15px;
+}
+
+.description .appointment-time {
+  color: #e84b47;
+}
+
+/*右侧内容*/
+.service-provider {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+}
+
+.service-provider .title {
+  font-size: 20px;
+  padding-left: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 60px;
+  line-height: 60px;
+  font-family: latobold, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.service-provider .avatar {
+  width: 80px;
+  height: 80px;
+  padding: 35px 74px 20px;
+}
+
+.service-provider .service-name {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.service-provider .sale-info {
+  line-height: 36px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.service-provider .sale-info span {
+  float: right;
+  color: #e84b47;
+}
+
+.content-right .qr-code {
+  width: 230px;
+  height: 290px;
+  background: url("../img/tuijianfuwushang_06.jpg") no-repeat;
+  margin-top: 10px;
+}
+
+.content-right .qr-code img {
+  width: 130px;
+  height: 130px;
+  margin: 50px;
+}
+
